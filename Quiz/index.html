@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Welcome to the Python Quiz!</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What is the capital of France?</p>
+                <label><input type="radio" name="q1" value="1"> Berlin</label><br>
+                <label><input type="radio" name="q1" value="2"> Madrid</label><br>
+                <label><input type="radio" name="q1" value="3"> Paris</label><br>
+                <label><input type="radio" name="q1" value="4"> Rome</label>
+            </div>
+            <div class="question">
+                <p>2. What is the largest planet in our Solar System?</p>
+                <label><input type="radio" name="q2" value="1"> Earth</label><br>
+                <label><input type="radio" name="q2" value="2"> Mars</label><br>
+                <label><input type="radio" name="q2" value="3"> Jupiter</label><br>
+                <label><input type="radio" name="q2" value="4"> Saturn</label>
+            </div>
+            <div class="question">
+                <p>3. Who wrote "To Kill a Mockingbird"?</p>
+                <label><input type="radio" name="q3" value="1"> Harper Lee</label><br>
+                <label><input type="radio" name="q3" value="2"> Mark Twain</label><br>
+                <label><input type="radio" name="q3" value="3"> J.K. Rowling</label><br>
+                <label><input type="radio" name="q3" value="4"> Ernest Hemingway</label>
+            </div>
+            <div class="question">
+                <p>4. What is the chemical symbol for water?</p>
+                <label><input type="radio" name="q4" value="1"> O2</label><br>
+                <label><input type="radio" name="q4" value="2"> H2O</label><br>
+                <label><input type="radio" name="q4" value="3"> CO2</label><br>
+                <label><input type="radio" name="q4" value="4"> N2</label>
+            </div>
+            <div class="question">
+                <p>5. What is the square root of 64?</p>
+                <label><input type="radio" name="q5" value="1"> 6</label><br>
+                <label><input type="radio" name="q5" value="2"> 7</label><br>
+                <label><input type="radio" name="q5" value="3"> 8</label><br>
+                <label><input type="radio" name="q5" value="4"> 9</label>
+            </div>
+            <button type="button" onclick='submitQuiz()'>Submit</button>
+        </form>
+    </div>
+    <div id="results-container" style="display:none;">
+        <h2>Your Results</h2>
+        <p id="score"></p>
+        <p id="message"></p>
+        <button onclick="restartQuiz()">Take the Quiz Again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
